@@ -37,32 +37,32 @@ button {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/portfolio/fonts/inter-regular.eot");
-  src: local("Inter"), url("/portfolio/fonts/inter-regular.eot?#iefix") format("embedded-opentype"), url("/portfolio/fonts/inter-regular.woff2") format("woff2"), url("/portfolio/fonts/inter-regular.woff") format("woff"), url("/portfolio/fonts/inter-regular.ttf") format("truetype"), url("/portfolio/fonts/inter-regular.svg") format("svg");
+  src: url("../fonts/inter-regular.eot");
+  src: local("Inter"), url("../fonts/inter-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-regular.woff2") format("woff2"), url("../fonts/inter-regular.woff") format("woff"), url("../fonts/inter-regular.ttf") format("truetype"), url("../fonts/inter-regular.svg") format("svg");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("/portfolio/fonts/inter-medium.eot");
-  src: local("Inter"), url("/portfolio/fonts/inter-medium.eot?#iefix") format("embedded-opentype"), url("/portfolio/fonts/inter-medium.woff2") format("woff2"), url("/portfolio/fonts/inter-medium.woff") format("woff"), url("/portfolio/fonts/inter-medium.ttf") format("truetype"), url("/portfolio/fonts/inter-medium.svg") format("svg");
+  src: url("../fonts/inter-medium.eot");
+  src: local("Inter"), url("../fonts/inter-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-medium.woff2") format("woff2"), url("../fonts/inter-medium.woff") format("woff"), url("../fonts/inter-medium.ttf") format("truetype"), url("../fonts/inter-medium.svg") format("svg");
 }
 @font-face {
   font-family: "Next Art";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("/portfolio/fonts/nextart-bold.eot");
-  src: local("Next Art"), url("/portfolio/fonts/nextart-bold.eot?#iefix") format("embedded-opentype"), url("/portfolio/fonts/nextart-bold.woff2") format("woff2"), url("/portfolio/fonts/nextart-bold.woff") format("woff"), url("/portfolio/fonts/nextart-bold.ttf") format("truetype"), url("/portfolio/fonts/nextart-bold.svg") format("svg");
+  src: url("../fonts/nextart-bold.eot");
+  src: local("Next Art"), url("../fonts/nextart-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/nextart-bold.woff2") format("woff2"), url("../fonts/nextart-bold.woff") format("woff"), url("../fonts/nextart-bold.ttf") format("truetype"), url("../fonts/nextart-bold.svg") format("svg");
 }
 @font-face {
   font-family: "Roboto Mono";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/portfolio/fonts/robotomono-regular.eot");
-  src: local("Roboto Mono"), url("/portfolio/fonts/robotomono-regular.eot?#iefix") format("embedded-opentype"), url("/portfolio/fonts/robotomono-regular.woff2") format("woff2"), url("/portfolio/fonts/robotomono-regular.woff") format("woff"), url("/portfolio/fonts/robotomono-regular.ttf") format("truetype"), url("/portfolio/fonts/robotomono-regular.svg") format("svg");
+  src: url("../fonts/robotomono-regular.eot");
+  src: local("Roboto Mono"), url("../fonts/robotomono-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/robotomono-regular.woff2") format("woff2"), url("../fonts/robotomono-regular.woff") format("woff"), url("../fonts/robotomono-regular.ttf") format("truetype"), url("../fonts/robotomono-regular.svg") format("svg");
 }
 html {
   scroll-behavior: smooth;
@@ -78,7 +78,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif, "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
