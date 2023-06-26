@@ -17,8 +17,8 @@
 	line-height: $header-line-height;
 }
 
-@include font-face("Inter", "/dist/fonts/inter-regular", 400);
-@include font-face("Inter", "/dist/fonts/inter-medium", 500);
-@include font-face("Next Art", "/dist/fonts/nextart-bold", 600);
-@include font-face("Roboto Mono", "/dist/fonts/robotomono-regular", 400);
-// @include font-face("Inter", "/dist/fonts/inter-semibold", 600);
+@include font-face("Inter", "/portfolio/fonts/inter-regular", 400);
+@include font-face("Inter", "/portfolio/fonts/inter-medium", 500);
+@include font-face("Next Art", "/portfolio/fonts/nextart-bold", 600);
+@include font-face("Roboto Mono", "/portfolio/fonts/robotomono-regular", 400);
+// @include font-face("Inter", "/portfolio/fonts/inter-semibold", 600);
