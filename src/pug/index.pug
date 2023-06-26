@@ -1,0 +1,226 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title='Игорь Бобрик — HTML-верстальщик, контент-специалист'
+		meta(name='description' content='')
+		meta(name='keywords' content='')
+		meta(property='og:title' content='')
+		meta(property='og:description' content='')
+		meta(property='og:image' content='/dist/img/cover-project.jpg')
+		meta(name='robots' content='noindex, nofollow')
+		link(rel='shortcut icon' type='image/png' href='/dist/img/favicon.ico')
+		link(rel='apple-touch-icon' href='/dist/img/apple-touch-icon.png')
+		link(rel='stylesheet' type='text/css' href='/dist/css/style.css')
+	body
+		.wrapper 
+			header.header
+				aside.header__container
+					.header__top
+						.header__me
+							h1 Игорь Бобрик
+							h2 HTML-верстальщик, контент-специалист
+							p Опыт в&nbsp;IT-сфере более 6&nbsp;лет. Делаю удобные и&nbsp;качественные сайты, учитывая потребности пользователей
+						nav.header__nav.nav
+							ul.nav__list 
+								li.nav__item
+									a.nav__link(href="#section-1") Обо мне
+								li.nav__item
+									a.nav__link(href="#section-2") Опыт работы
+								li.nav__item
+									a.nav__link(href="#section-3") Технологии
+								li.nav__item
+									a.nav__link(href="#section-4") Проекты
+					.header__contacts.contacts
+						p.contacts__title Связаться со&nbsp;мной
+						.contacts__inner 
+							a.contacts__link(href="mailto:bobrenokk@gmail.com") 
+								span.contacts__icon.icon-email
+									include ../img/icon-mail.svg
+							a.contacts__link(href="https://t.me/hladasurana") 
+								span.contacts__icon.icon-whatsapp
+									include ../img/icon-whatsapp.svg
+							a.contacts__link(href="https://api.whatsapp.com/send?phone=79252901913") 
+								span.contacts__icon.icon-telegram
+									include ../img/icon-telegram.svg
+			main.main
+				.main__container
+					section.main__section.about#section-1
+						.about__content
+							h2.about__title.hidden-title.section-title Обо мне 
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci architecto qui neque tenetur nobis optio, et doloribus inventore consectetur vitae aliquam quidem laboriosam commodi quae quas placeat itaque quo.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci architecto qui neque tenetur nobis optio, et doloribus inventore consectetur vitae aliquam quidem laboriosam commodi quae quas placeat itaque quo.
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci architecto qui neque tenetur nobis optio, et doloribus inventore consectetur vitae aliquam quidem laboriosam commodi quae quas placeat itaque quo.
+					section.main__section.experience#section-2
+						.experience__container
+							h2.experience__title.hidden-title.section-title Опыт работы
+							.experience__inner
+								.experience__tabs.tabs
+									ul.experience__list
+										li 
+											a.experience__tab.tab-trigger(href="#tab-1") Merlion
+										li 
+											a.experience__tab.tab-trigger(href="#tab-2") BrandStudio
+										li 
+											a.experience__tab.tab-trigger(href="#tab-3") Kodix
+										li 
+											a.experience__tab.tab-trigger(href="#tab-4") ADL
+										li 
+											a.experience__tab.tab-trigger(href="#tab-5") Likvy
+										li 
+											a.experience__tab.tab-trigger(href="#tab-6") Philips
+								.experience__content
+									.experience__item.tab-block#tab-1
+										h3.experience__post HTML-верстальщик / Контент-менеджер <span class="experience__company">@<a class="link" href="https://merlion.com" target="_blank">Merlion</a></span>
+										span.experience__period Октябрь 2020 &ndash;&nbsp;Март 2023
+										.experience__description
+											ul.responsibility__list 
+												li.responsibility__item Верстка шаблонов сайтов и&nbsp;промостраниц по&nbsp;дизайнерским макетам
+												li.responsibility__item Верстка писем для&nbsp;email-рассылок
+												li.responsibility__item Поддержка действующих сайтов компании (более&nbsp;30 сайтов различной направленности)
+												li.responsibility__item Подготовка и&nbsp;размещение визуального и&nbsp;текстового контента
+												li.responsibility__item Техническая SEO‑оптимизация сайтов, проведение аудитов
+												li.responsibility__item Выгрузка, обработка и&nbsp;предоставление веб‑аналитики
+												li.responsibility__item Работа в&nbsp;команде
+									.experience__item.tab-block#tab-2
+										h3.experience__post Контент-менеджер <span class="experience__company">@<a class="link" href="https://bstd.ru/" target="_blank">BrandStudio</a></span>
+										span.experience__period Сентябрь 2019 &ndash;&nbsp;Апрель 2020
+										.experience__description
+											ul.responsibility__list 
+												li.responsibility__item Поддержка клиентских сайтов <a href="https://www.toyota.ru/" target="_blank" class="link">Toyota</a> и&nbsp;<a href="https://www.lexus.ru/" target="_blank" class="link">Lexus</a>
+												li.responsibility__item Заведение карточек товара
+												li.responsibility__item Размещение новостей и&nbsp;пресс-релизов, загрузка фото- и&nbsp;видеоматериалов
+												li.responsibility__item Обновление информации в&nbsp;БД
+												li.responsibility__item Коммуникация с&nbsp;клиентом по&nbsp;вопросам размещения контента
+									.experience__item.tab-block#tab-3
+										h3.experience__post Контент-менеджер <span class="experience__company">@<a class="link" href="https://udpauto.ru/" target="_blank">Kodix</a></span>
+										span.experience__period Июнь 2018 &ndash;&nbsp;Июнь 2019
+										.experience__description
+											ul.responsibility__list 
+												li.responsibility__item Поддержка клиентских сайтов. Среди клиентов  бренды <a href="" target="_blank" class="link">Volkswagen</a>, <a href="" target="_blank" class="link">Yamaha</a>, <a href="" target="_blank" class="link">Ford</a>, <a href="" target="_blank" class="link">Skoda</a>, <a href="" target="_blank" class="link">Audi</a>, <a href="" target="_blank" class="link">IKEA</a>
+												li.responsibility__item Подготовка и&nbsp;публикация новостей
+												li.responsibility__item Размещение информации и&nbsp;наполнение страниц сайтов контентом
+												li.responsibility__item SEO-оптимизация сайтов, аудирование
+												li.responsibility__item Ведение деловой переписки с&nbsp;клиентами
+												li.responsibility__item Работа в&nbsp;команде
+									.experience__item.tab-block#tab-4
+										h3.experience__post Контент-менеджер / Вебмастер <span class="experience__company">@<a class="link" href="https://adl.ru/" target="_blank">ADL</a></span>
+										span.experience__period Апрель 2017 &ndash;&nbsp;Июнь 2018
+										.experience__description
+											ul.responsibility__list 
+												li.responsibility__item Размещение контента на&nbsp;сайте холдинга
+												li.responsibility__item Заведение карточек товаров и&nbsp;публикация на&nbsp;сайте
+												li.responsibility__item SEO-оптимизация и&nbsp;продвижение по&nbsp;ключевым словам, аналитика
+												li.responsibility__item Верстка промостраниц
+												li.responsibility__item Верстка писем для&nbsp;email-рассылки
+												li.responsibility__item Запуск рекламных кампаний в&nbsp;Яндекс.Директ
+												li.responsibility__item Ведение бюджета по&nbsp;веб-направлению
+									.experience__item.tab-block#tab-5
+										h3.experience__post Контент-менеджер <span class="experience__company">@<a class="link" href="https://vk.com/likvy" target="_blank">Likvy</a></span>
+										span.experience__period Июль 2016 &ndash;&nbsp;Апрель 2017
+										.experience__description
+											ul.responsibility__list 
+												li.responsibility__item Заведение карточек товаров
+												li.responsibility__item Создание, подготовка и&nbsp;размещение контента в&nbsp;социальных сетях
+												li.responsibility__item Администрирование сайта магазина
+									.experience__item.tab-block#tab-6
+										h3.experience__post Ассистент маркетолога <span class="experience__company">@<a class="link" href="https://www.philips.ru/" target="_blank">Philips</a></span>
+										span.experience__period Июнь 2015 &ndash;&nbsp;Июнь 2016
+										.experience__description
+											ul.responsibility__list 
+												li.responsibility__item Участие в&nbsp;разработке и&nbsp;запуске трейд-маркетинговых проектов, связанных с&nbsp;размещением оборудования в&nbsp;крупных розничных сетях
+					section.main__section.technology#section-3
+						.technology__content
+							.technology__section
+								h3.technology__title Технологии
+								ul.technology__list 	
+									li.technology__item HTML&nbsp;5
+									li.technology__item CSS&nbsp;3
+									li.technology__item SCSS/SASS
+									li.technology__item JavaScript
+									li.technology__item JQuery
+									li.technology__item Pug/Jade
+									li.technology__item GitHub
+									li.technology__item npm
+									li.technology__item Bootstrap
+									li.technology__item SVG
+									li.technology__item JSON
+									li.technology__item Mobile First
+									li.technology__item БЭМ
+							.technology__section
+								h3.technology__title Инструменты
+								ul.technology__list 	
+									li.technology__item VS&nbsp;Code
+									li.technology__item Photoshop
+									li.technology__item Prepros
+									li.technology__item Git Bash
+									li.technology__item Figma
+									li.technology__item FileZilla
+									li.technology__item Emmet
+							.technology__section
+								h3.technology__title Знания
+								ul.technology__list 	
+									li.technology__item SEO
+									li.technology__item UX/UI
+									li.technology__item Веб-дизайн
+									li.technology__item 1С-Битрикс
+									li.technology__item Веб-аналитика
+									li.technology__item Контекстная реклама
+									li.technology__item MS Office
+									li.technology__item Task trackers
+									li.technology__item CMS
+					section.main__section.works#section-4
+						.works__content 
+							h2.works__title.hidden-title.section-title Проекты
+							article.works__item
+								a.works__link(href="https://weblazum.github.io/gmng" target="_blank")
+									.works__cover 
+										img(src="/dist/img/cover-gmng.jpg", alt="") 
+									.works__content
+										h3.works__name GMNG &ndash;&nbsp;сайт производителя устройств для&nbsp;геймеров
+											include ../img/arrow.svg
+										.works__description 
+											p Яркий и&nbsp;функциональный сайт с&nbsp;товарным каталогом, обзорами геймерских устройств, новостями, баннерами и&nbsp;страницами с&nbsp;информацией. В&nbsp;каталоге реализованы фильтры по&nbsp;товарным группам, в&nbsp;карточках товарах присутствует весь необходимый функционал, позволяющий ознакомиться с&nbsp;продукцией: фотогалерея, таблица технических характеристик, файлы для&nbsp;скачивания, обзоры, а&nbsp;также перелинковка с&nbsp;другими товарами. 
+											p Сайт адаптирован под&nbsp;мобильные устройства. Также внимание было уделено скорости загрузки страниц и&nbsp;доступности, использовались современные форматы изображений и&nbsp;векторная графика.
+							article.works__item
+								a.works__link(href="https://weblazum.github.io/merlioncloud" target="_blank")
+									.works__cover 
+										img(src="/dist/img/cover-merlioncloud.jpg", alt="")
+									.works__content
+										h3.works__name MerlionCloud &ndash;&nbsp;сайт провайдера облачных серверов и&nbsp;услуг
+											include ../img/arrow.svg
+										.works__description 
+											p Информационный сайт компании, занимающейся арендой серверов и&nbsp;предоставлением облачных услуг. Минималистичный, но&nbsp;приятный дизайн со&nbsp;множеством декоративных элементов на&nbsp;страницах. Есть страницы с&nbsp;тарифами предоставляемых услуг и&nbsp;необходимой информацией, а&nbsp;также формы обратной связи, новости и&nbsp;прочая статика. Для форм прописаны маски полей.
+							article.works__item
+								a.works__link(href="https://weblazum.github.io/tegrus_library" target="_blank")
+									.works__cover 
+										img(src="/dist/img/cover-tegrus.jpg", alt="")
+									.works__content
+										h3.works__name Промостраница проекта Tegrus для&nbsp;библиотеки им.&nbsp;Маяковского 
+											include ../img/arrow.svg
+										.works__description 
+											p Небольшая красочная страница-отчет о реализации проекта дата-центров для библиотеки им. Маяковского в Санкт-Петербурге. Текст последовательно сопровождается анимацией, также есть форма обратной связи и нестандартный слайдер в конце страницы. Страница читабельна на всех разрешениях экрана. 
+							article.works__item
+								a.works__link(href="https://weblazum.github.io/hpe_msa_gen6" target="_blank")
+									.works__cover 
+										img(src="/dist/img/cover-hpe.jpg", alt="") 
+									.works__content
+										h3.works__name Продуктовый лендинг для&nbsp;систем хранения данных HPE MSA GEN6
+											include ../img/arrow.svg
+										.works__description 
+											p Страница рассказывает о преимуществах продукта. Присутствует форма обратной связи, а также дополнительная форма для подбора решений в модальном окне.
+							article.works__item
+								a.works__link(href="https://weblazum.github.io/rentsoft" target="_blank")
+									.works__cover 
+										img(src="/dist/img/cover-rentsoft.jpg", alt="") 
+									.works__content
+										h3.works__name Сайт российской ИТ-компании Rentsoft
+											include ../img/arrow.svg
+										.works__description 
+											p Небольшой сайт B2B-компании в бизнес-стиле.
+
+		script(src='/dist/js/jquery-3.6.0.min.js')
+		//- script(src='js/jquery.fancybox.min.js')
+		script(src='/dist/js/main.js')

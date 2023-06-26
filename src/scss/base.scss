@@ -1,0 +1,74 @@
+html {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $font-family-base;
+	font-weight: $font-weight-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	background-color: $color-black;
+	color: $color-white;
+	font-size: 16px;
+	min-width: 320px;
+	line-height: 1.4;
+	margin: 0 auto;
+	height: fit-content;
+	min-height: 100vh;
+	font-style: normal;
+}
+
+p {
+	color: $color-grey;
+	margin: 0 0 20px;
+	line-height: 1.6;
+	@include media(phone-bg) {
+		margin: 0 0 16px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: transparent;
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Inter";
+	margin: 0 0 12px;
+	line-height: 1.4;
+}
+
+h1 {
+	@include font(44px, 600);
+}
+
+h2 {
+	@include font(20px, 400);
+}
+
+h3 {
+	@include font(16px, 500);
+}
+
+::selection {
+	color: $color-accent;
+}
+img {
+	max-width: 100%;
+}

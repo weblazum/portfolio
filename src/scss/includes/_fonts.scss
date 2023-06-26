@@ -1,0 +1,24 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+		src: url("#{$file-path}.eot");
+		src: local("#{$font-family}"), url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+			url("#{$file-path}.woff2") format("woff2"), url("#{$file-path}.woff") format("woff"),
+			url("#{$file-path}.ttf") format("truetype"), url("#{$file-path}.svg") format("svg");
+	}
+}
+
+@mixin font($header-font-size, $header-font-weight: $font-weight-base, $header-line-height: $line-height-base) {
+	font-size: $header-font-size;
+	font-weight: $header-font-weight;
+	line-height: $header-line-height;
+}
+
+@include font-face("Inter", "/dist/fonts/inter-regular", 400);
+@include font-face("Inter", "/dist/fonts/inter-medium", 500);
+@include font-face("Next Art", "/dist/fonts/nextart-bold", 600);
+@include font-face("Roboto Mono", "/dist/fonts/robotomono-regular", 400);
+// @include font-face("Inter", "/dist/fonts/inter-semibold", 600);
