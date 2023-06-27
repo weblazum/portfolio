@@ -118,7 +118,7 @@
 		opacity: 0.5;
 		transition: 0.25s ease;
 	}
-	&:focus,
+	&:focus-visible,
 	&:active {
 		color: $color-accent;
 		&:after {
@@ -167,7 +167,7 @@
 		background-color: $color-grey;
 		transition: 0.2s ease-out;
 	}
-	&:focus {
+	&:focus-visible {
 		color: $color-accent;
 		&:before {
 			background-color: $color-accent;
@@ -201,7 +201,7 @@
 	display: inline-flex;
 	align-items: center;
 	color: $color-grey;
-	&:focus .contacts__icon svg {
+	&:focus-visible .contacts__icon svg {
 		opacity: 1;
 	}
 	@include media(only-laptop) {
@@ -297,7 +297,7 @@
 	border-left: 2px solid lighten($color-dark-grey, 10%);
 	position: relative;
 	transition: 0.2s ease;
-	&:focus {
+	&:focus-visible {
 		outline: none;
 		background-color: $color-dark-grey;
 		color: $color-accent;
@@ -442,13 +442,13 @@ li.responsibility__item {
 	border-radius: 4px;
 	padding: 24px;
 	transition: 0.2s ease-in-out;
-	&:focus .works__name {
+	&:focus-visible .works__name {
 		color: $color-accent;
 	}
-	&:focus .works__name svg {
+	&:focus-visible .works__name svg {
 		transform: translate(4px, 0px);
 	}
-	&:focus .works__cover img {
+	&:focus-visible .works__cover img {
 		filter: grayscale(0);
 	}
 	@include media(only-laptop) {

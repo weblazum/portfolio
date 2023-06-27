@@ -74,6 +74,10 @@ img {
 }
 
 *:focus {
+	outline: none;
+}
+
+*:focus-visible {
 	outline: 1px solid $color-accent;
 	outline-offset: 3px;
 }
