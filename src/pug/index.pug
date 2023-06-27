@@ -5,11 +5,9 @@ html(lang='ru')
 		meta(http-equiv='X-UA-Compatible' content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		title='Игорь Бобрик — HTML-верстальщик, контент-специалист'
-		meta(name='description' content='')
-		meta(name='keywords' content='')
-		meta(property='og:title' content='')
-		meta(property='og:description' content='')
-		meta(property='og:image' content='/portfolio/img/cover-project.jpg')
+		meta(name='description' content='Опыт в IT-сфере более 6 лет. Делаю удобные и качественные сайты, учитывая потребности пользователей')
+		meta(property='og:title' content='Игорь Бобрик — HTML-верстальщик, контент-специалист')
+		meta(property='og:description' content='Опыт в IT-сфере более 6 лет. Делаю удобные и качественные сайты, учитывая потребности пользователей')
 		meta(name='robots' content='noindex, nofollow')
 		link(rel='shortcut icon' type='image/png' href='/portfolio/img/favicon.ico')
 		link(rel='apple-touch-icon' href='/portfolio/img/apple-touch-icon.png')
@@ -177,7 +175,10 @@ html(lang='ru')
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/gmng" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-gmng.jpg", alt="") 
+										picture
+											source(type="image/webp", srcset="/portfolio/img/cover-gmng.webp")
+											source(type="image/jpg", srcset="/portfolio/img/cover-gmng.jpg")
+											img(src="/portfolio/img/cover-gmng.jpg", alt="GMNG")
 									.works__content
 										h3.works__name GMNG &ndash;&nbsp;сайт производителя устройств для&nbsp;
 											span.last-word геймеров
@@ -188,7 +189,10 @@ html(lang='ru')
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/merlioncloud" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-merlioncloud.jpg", alt="")
+										picture
+											source(type="image/webp", srcset="/portfolio/img/cover-merlioncloud.webp")
+											source(type="image/jpg", srcset="/portfolio/img/cover-merlioncloud.jpg")
+											img(src="/portfolio/img/cover-merlioncloud.jpg", alt="MerlionCloud")
 									.works__content
 										h3.works__name MerlionCloud &ndash;&nbsp;сайт провайдера облачных серверов и&nbsp;
 											span.last-word услуг
@@ -198,7 +202,10 @@ html(lang='ru')
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/tegrus_library" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-tegrus.jpg", alt="")
+										picture
+											source(type="image/webp", srcset="/portfolio/img/cover-tegrus.webp")
+											source(type="image/jpg", srcset="/portfolio/img/cover-tegrus.jpg")
+											img(src="/portfolio/img/cover-tegrus.jpg", alt="Tegrus библиотека")
 									.works__content
 										h3.works__name Промостраница проекта Tegrus для&nbsp;библиотеки им.&nbsp;
 											span.last-word Маяковского 
@@ -208,7 +215,10 @@ html(lang='ru')
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/hpe_msa_gen6" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-hpe.jpg", alt="") 
+										picture
+											source(type="image/webp", srcset="/portfolio/img/cover-hpe.webp")
+											source(type="image/jpg", srcset="/portfolio/img/cover-hpe.jpg")
+											img(src="/portfolio/img/cover-hpe.jpg", alt="HPE MSA GEN6")
 									.works__content
 										h3.works__name Продуктовый лендинг для&nbsp;систем хранения данных HPE MSA 
 											span.last-word GEN6
@@ -218,14 +228,15 @@ html(lang='ru')
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/rentsoft" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-rentsoft.jpg", alt="") 
+										picture
+											source(type="image/webp", srcset="/portfolio/img/cover-rentsoft.webp")
+											source(type="image/jpg", srcset="/portfolio/img/cover-rentsoft.jpg")
+											img(src="/portfolio/img/cover-rentsoft.jpg", alt="Rentsoft")
 									.works__content
 										h3.works__name Сайт российской ИТ-компании 
 											span.last-word Rentsoft
 												include ../img/arrow.svg
 										.works__description 
 											p Небольшой сайт B2B-компании в бизнес-стиле.
-
 		script(src='/portfolio/js/jquery-3.6.0.min.js')
-		//- script(src='js/jquery.fancybox.min.js')
 		script(src='/portfolio/js/main.js')

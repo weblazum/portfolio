@@ -126,8 +126,6 @@
 			}
 		}
 	}
-	&:focus {
-	}
 }
 
 .nav {
@@ -255,7 +253,7 @@
 .experience__tabs {
 	@include media(phone-bg) {
 		overflow: auto;
-		padding: 0 0 4px;
+		padding: 0 0 2px;
 		margin: 0 0 30px;
 		&::-webkit-scrollbar {
 			width: 12px;
@@ -265,18 +263,9 @@
 		&::-webkit-scrollbar-thumb {
 			background-color: $color-middle-grey;
 			border-radius: 5px;
-			&:hover,
-			&:active {
-				background-color: $color-middle-grey;
-				border-radius: 5px;
-			}
 		}
 		&::-webkit-scrollbar-track {
 			background-clip: padding-box;
-			&:hover,
-			&:active {
-				background-clip: padding-box;
-			}
 		}
 		&::-webkit-scrollbar-button {
 			height: 0;
@@ -464,11 +453,6 @@ li.responsibility__item {
 			transform: translate(4px, 0px);
 		}
 	}
-	// &:focus {
-	// 	background-color: $color-dark-grey;
-	// 	border-top: 2px solid lighten($color-dark-grey, 10%);
-	// 	opacity: 1 !important;
-	// }
 	&:focus .works__name {
 		color: $color-accent;
 	}

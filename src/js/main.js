@@ -36,7 +36,6 @@ let tabs = document.querySelector('.tabs');
 let tabTrigger = document.querySelector('.tab-trigger');
 let tabTriggers = document.querySelectorAll('.tab-trigger');
 let tabBlocks = document.querySelectorAll('.tab-block');
-// let featuresSection = document.querySelector('.features');
 
 
 tabTriggers.forEach((item) => {
@@ -58,7 +57,3 @@ tabTriggers.forEach((item) => {
 });
 
 tabTrigger.click();
-
-// if (tabs !== null && tabTrigger === null) {
-// 	featuresSection.remove();
-// }
