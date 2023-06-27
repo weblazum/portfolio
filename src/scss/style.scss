@@ -118,6 +118,13 @@
 		opacity: 0.5;
 		transition: 0.25s ease;
 	}
+	&:focus,
+	&:active {
+		color: $color-accent;
+		&:after {
+			width: 100%;
+		}
+	}
 	@include media(only-laptop) {
 		&:hover {
 			color: $color-accent;
@@ -194,14 +201,13 @@
 	display: inline-flex;
 	align-items: center;
 	color: $color-grey;
+	&:focus .contacts__icon svg {
+		opacity: 1;
+	}
 	@include media(only-laptop) {
 		&:hover {
 			color: $color-white;
 		}
-	}
-
-	&:focus .contacts__icon svg {
-		opacity: 1;
 	}
 }
 
@@ -290,17 +296,18 @@
 	height: 42px;
 	border-left: 2px solid lighten($color-dark-grey, 10%);
 	position: relative;
+	transition: 0.2s ease;
+	&:focus {
+		outline: none;
+		background-color: $color-dark-grey;
+		color: $color-accent;
+	}
 	@include media(only-laptop) {
-		transition: 0.2s ease;
 		&:hover {
 			background-color: $color-dark-grey;
 			color: $color-accent;
 			transition: 0.2s ease;
 		}
-	}
-	&:focus {
-		background-color: $color-dark-grey;
-		color: $color-accent;
 	}
 	&--active {
 		background-color: $color-dark-grey;
@@ -378,7 +385,6 @@ li.responsibility__item {
 
 .technology__section {
 	margin: 0 0 40px;
-	// padding: 0 24px;
 	@include media(phone-bg) {
 		padding: 0;
 	}
@@ -435,8 +441,17 @@ li.responsibility__item {
 	border-top: 2px solid transparent;
 	border-radius: 4px;
 	padding: 24px;
+	transition: 0.2s ease-in-out;
+	&:focus .works__name {
+		color: $color-accent;
+	}
+	&:focus .works__name svg {
+		transform: translate(4px, 0px);
+	}
+	&:focus .works__cover img {
+		filter: grayscale(0);
+	}
 	@include media(only-laptop) {
-		transition: 0.2s ease-in-out;
 		&:hover {
 			background-color: $color-dark-grey;
 			transition: 0.2s ease-in-out;
@@ -452,15 +467,6 @@ li.responsibility__item {
 		&:hover .works__name svg {
 			transform: translate(4px, 0px);
 		}
-	}
-	&:focus .works__name {
-		color: $color-accent;
-	}
-	&:focus .works__name svg {
-		transform: translate(4px, 0px);
-	}
-	&:focus .works__cover img {
-		filter: grayscale(0);
 	}
 	@include media(phone-bg) {
 		display: block;
@@ -522,6 +528,7 @@ li.responsibility__item {
 
 .section-title {
 	margin: 0 0 26px;
+	@include font(22px, 400);
 }
 
 .hidden-title {

@@ -72,3 +72,8 @@ h3 {
 img {
 	max-width: 100%;
 }
+
+*:focus {
+	outline: 1px solid $color-accent;
+	outline-offset: 3px;
+}
