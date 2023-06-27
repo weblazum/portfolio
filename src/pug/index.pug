@@ -9,11 +9,11 @@ html(lang='ru')
 		meta(name='keywords' content='')
 		meta(property='og:title' content='')
 		meta(property='og:description' content='')
-		meta(property='og:image' content='/portfolio/img/cover-project.jpg')
+		meta(property='og:image' content='/dist/img/cover-project.jpg')
 		meta(name='robots' content='noindex, nofollow')
-		link(rel='shortcut icon' type='image/png' href='/portfolio/img/favicon.ico')
-		link(rel='apple-touch-icon' href='/portfolio/img/apple-touch-icon.png')
-		link(rel='stylesheet' type='text/css' href='/portfolio/css/style.css')
+		link(rel='shortcut icon' type='image/png' href='/dist/img/favicon.ico')
+		link(rel='apple-touch-icon' href='/dist/img/apple-touch-icon.png')
+		link(rel='stylesheet' type='text/css' href='/dist/css/style.css')
 	body
 		.wrapper 
 			header.header
@@ -177,50 +177,55 @@ html(lang='ru')
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/gmng" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-gmng.jpg", alt="") 
+										img(src="/dist/img/cover-gmng.jpg", alt="") 
 									.works__content
-										h3.works__name GMNG &ndash;&nbsp;сайт производителя устройств для&nbsp;геймеров
-											include ../img/arrow.svg
+										h3.works__name GMNG &ndash;&nbsp;сайт производителя устройств для&nbsp;
+											span.last-word геймеров
+												include ../img/arrow.svg
 										.works__description 
 											p Яркий и&nbsp;функциональный сайт с&nbsp;товарным каталогом, обзорами геймерских устройств, новостями, баннерами и&nbsp;страницами с&nbsp;информацией. В&nbsp;каталоге реализованы фильтры по&nbsp;товарным группам, в&nbsp;карточках товарах присутствует весь необходимый функционал, позволяющий ознакомиться с&nbsp;продукцией: фотогалерея, таблица технических характеристик, файлы для&nbsp;скачивания, обзоры, а&nbsp;также перелинковка с&nbsp;другими товарами. 
 											p Сайт адаптирован под&nbsp;мобильные устройства. Также внимание было уделено скорости загрузки страниц и&nbsp;доступности, использовались современные форматы изображений и&nbsp;векторная графика.
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/merlioncloud" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-merlioncloud.jpg", alt="")
+										img(src="/dist/img/cover-merlioncloud.jpg", alt="")
 									.works__content
-										h3.works__name MerlionCloud &ndash;&nbsp;сайт провайдера облачных серверов и&nbsp;услуг
-											include ../img/arrow.svg
+										h3.works__name MerlionCloud &ndash;&nbsp;сайт провайдера облачных серверов и&nbsp;
+											span.last-word услуг
+												include ../img/arrow.svg
 										.works__description 
 											p Информационный сайт компании, занимающейся арендой серверов и&nbsp;предоставлением облачных услуг. Минималистичный, но&nbsp;приятный дизайн со&nbsp;множеством декоративных элементов на&nbsp;страницах. Есть страницы с&nbsp;тарифами предоставляемых услуг и&nbsp;необходимой информацией, а&nbsp;также формы обратной связи, новости и&nbsp;прочая статика. Для форм прописаны маски полей.
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/tegrus_library" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-tegrus.jpg", alt="")
+										img(src="/dist/img/cover-tegrus.jpg", alt="")
 									.works__content
-										h3.works__name Промостраница проекта Tegrus для&nbsp;библиотеки им.&nbsp;Маяковского 
-											include ../img/arrow.svg
+										h3.works__name Промостраница проекта Tegrus для&nbsp;библиотеки им.&nbsp;
+											span.last-word Маяковского 
+												include ../img/arrow.svg
 										.works__description 
 											p Небольшая красочная страница-отчет о реализации проекта дата-центров для библиотеки им. Маяковского в Санкт-Петербурге. Текст последовательно сопровождается анимацией, также есть форма обратной связи и нестандартный слайдер в конце страницы. Страница читабельна на всех разрешениях экрана. 
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/hpe_msa_gen6" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-hpe.jpg", alt="") 
+										img(src="/dist/img/cover-hpe.jpg", alt="") 
 									.works__content
-										h3.works__name Продуктовый лендинг для&nbsp;систем хранения данных HPE MSA GEN6
-											include ../img/arrow.svg
+										h3.works__name Продуктовый лендинг для&nbsp;систем хранения данных HPE MSA 
+											span.last-word GEN6
+												include ../img/arrow.svg
 										.works__description 
 											p Страница рассказывает о преимуществах продукта. Присутствует форма обратной связи, а также дополнительная форма для подбора решений в модальном окне.
 							article.works__item
 								a.works__link(href="https://weblazum.github.io/rentsoft" target="_blank")
 									.works__cover 
-										img(src="/portfolio/img/cover-rentsoft.jpg", alt="") 
+										img(src="/dist/img/cover-rentsoft.jpg", alt="") 
 									.works__content
-										h3.works__name Сайт российской ИТ-компании Rentsoft
-											include ../img/arrow.svg
+										h3.works__name Сайт российской ИТ-компании 
+											span.last-word Rentsoft
+												include ../img/arrow.svg
 										.works__description 
 											p Небольшой сайт B2B-компании в бизнес-стиле.
 
-		script(src='/portfolio/js/jquery-3.6.0.min.js')
+		script(src='/dist/js/jquery-3.6.0.min.js')
 		//- script(src='js/jquery.fancybox.min.js')
-		script(src='/portfolio/js/main.js')
+		script(src='/dist/js/main.js')
