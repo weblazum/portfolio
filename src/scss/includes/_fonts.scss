@@ -5,9 +5,13 @@
 		font-style: $style;
 		font-display: swap;
 		src: url("#{$file-path}.eot");
-		src: local("#{$font-family}"), url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
-			url("#{$file-path}.woff2") format("woff2"), url("#{$file-path}.woff") format("woff"),
-			url("#{$file-path}.ttf") format("truetype"), url("#{$file-path}.svg") format("svg");
+		src:
+			local("#{$font-family}"),
+			url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+			url("#{$file-path}.woff2") format("woff2"),
+			url("#{$file-path}.woff") format("woff"),
+			url("#{$file-path}.ttf") format("truetype"),
+			url("#{$file-path}.svg") format("svg");
 	}
 }
 
@@ -17,7 +21,7 @@
 	line-height: $header-line-height;
 }
 
-@include font-face("Inter", "/portfolio/fonts/inter-regular", 400);
-@include font-face("Inter", "/portfolio/fonts/inter-medium", 500);
-@include font-face("Next Art", "/portfolio/fonts/nextart-bold", 600);
-@include font-face("Roboto Mono", "/portfolio/fonts/robotomono-regular", 400);
+@include font-face("Inter", "/dist/fonts/inter-regular", 400);
+@include font-face("Inter", "/dist/fonts/inter-medium", 500);
+@include font-face("Next Art", "/dist/fonts/nextart-bold", 600);
+@include font-face("Roboto Mono", "/dist/fonts/robotomono-regular", 400);

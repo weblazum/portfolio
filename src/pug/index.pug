@@ -8,14 +8,14 @@ html(lang='ru')
 		meta(name='description' content='Опыт в IT-сфере более 6 лет. Делаю удобные и качественные сайты, учитывая потребности пользователей')
 		meta(property='og:title' content='Игорь Бобрик — HTML-верстальщик, контент-специалист')
 		meta(property='og:description' content='Опыт в IT-сфере более 6 лет. Делаю удобные и качественные сайты, учитывая потребности пользователей')
-		link(rel="apple-touch-icon" sizes="180x180" href="/portfolio/img/apple-touch-icon.png")
-		link(rel="icon" type="image/png" sizes="32x32" href="/portfolio/img/favicon-32x32.png")
-		link(rel="icon" type="image/png" sizes="16x16" href="/portfolio/img/favicon-16x16.png")
-		link(rel="manifest" href="/portfolio/img/site.webmanifest")
-		link(rel="mask-icon" href="/portfolio/img/safari-pinned-tab.svg" color="#5bbad5")
+		link(rel="apple-touch-icon" sizes="180x180" href="/dist/img/apple-touch-icon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="/dist/img/favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="/dist/img/favicon-16x16.png")
+		link(rel="manifest" href="/dist/img/site.webmanifest")
+		link(rel="mask-icon" href="/dist/img/safari-pinned-tab.svg" color="#5bbad5")
 		meta(name="msapplication-TileColor" content="#da532c")
 		meta(name="theme-color" content="#ffffff")
-		link(rel='stylesheet' type='text/css' href='/portfolio/css/style.css')
+		link(rel='stylesheet' type='text/css' href='/dist/css/style.css')
 
 	body
 		.bg-animated
@@ -35,8 +35,8 @@ html(lang='ru')
 										a.nav__link(href="#experience") Опыт работы
 									li.nav__item
 										a.nav__link(href="#works") Проекты
-									//- li.nav__item
-									//- 	a.nav__link(href="#about") Обо мне
+									li.nav__item
+										a.nav__link(href="#about") Обо мне
 						.header__contacts.contacts
 							p.contacts__title Связаться со&nbsp;мной
 							ul.contacts__list
@@ -165,10 +165,6 @@ html(lang='ru')
 											.skills_icon 
 												include ../img/skills/ux-design.svg
 											p.skills__name UX/UI
-										//- li.skills__item 
-										//- 	.skills_icon 
-										//- 		include ../img/skills/webdesign.svg
-										//- 	p.skills__name Веб-дизайн
 										li.skills__item 
 											.skills_icon 
 												include ../img/skills/bitrix.svg
@@ -179,12 +175,12 @@ html(lang='ru')
 											p.skills__name Веб-аналитика
 										li.skills__item 
 											.skills_icon 
-												include ../img/skills/advertising.svg
-											p.skills__name Контекстная реклама
-										li.skills__item 
-											.skills_icon 
 												include ../img/skills/microsoft-office.svg
 											p.skills__name MS Office
+										li.skills__item 
+											.skills_icon 
+												include ../img/skills/advertising.svg
+											p.skills__name Контекстная реклама
 										li.skills__item 
 											.skills_icon 
 												include ../img/skills/task.svg
@@ -278,79 +274,73 @@ html(lang='ru')
 									a.works__link(href="https://weblazum.github.io/gmng" target="_blank")
 										.works__cover 
 											picture
-												source(type="image/webp", srcset="/portfolio/img/cover-gmng.webp")
-												source(type="image/jpg", srcset="/portfolio/img/cover-gmng.jpg")
-												img(src="/portfolio/img/cover-gmng.jpg", alt="GMNG")
+												source(type="image/webp", srcset="/dist/img/cover-gmng.webp")
+												source(type="image/jpg", srcset="/dist/img/cover-gmng.jpg")
+												img(src="/dist/img/cover-gmng.jpg", alt="GMNG")
 										.works__content
 											h3.works__name GMNG &ndash;&nbsp;сайт производителя устройств для&nbsp;
 												span.last-word геймеров
 													include ../img/arrow.svg
 											.works__description 
 												p Яркий и&nbsp;функциональный сайт с&nbsp;товарным каталогом, обзорами геймерских устройств, новостями, баннерами и&nbsp;страницами с&nbsp;информацией. В&nbsp;каталоге реализованы фильтры по&nbsp;товарным группам, в&nbsp;карточках товарах присутствует весь необходимый функционал, позволяющий ознакомиться с&nbsp;продукцией: фотогалерея, таблица технических характеристик, файлы для&nbsp;скачивания, обзоры, а&nbsp;также перелинковка с&nbsp;другими товарами. Адаптирован под&nbsp;мобильные устройства.
-												//- p Сайт адаптирован под&nbsp;мобильные устройства. Также внимание было уделено скорости загрузки страниц и&nbsp;доступности, использовались современные форматы изображений и&nbsp;векторная графика.
-												//- span.works__hint Посмотреть демо
 								article.works__item
 									a.works__link(href="https://weblazum.github.io/merlioncloud" target="_blank")
 										.works__cover 
 											picture
-												source(type="image/webp", srcset="/portfolio/img/cover-merlioncloud.webp")
-												source(type="image/jpg", srcset="/portfolio/img/cover-merlioncloud.jpg")
-												img(src="/portfolio/img/cover-merlioncloud.jpg", alt="MerlionCloud")
+												source(type="image/webp", srcset="/dist/img/cover-merlioncloud.webp")
+												source(type="image/jpg", srcset="/dist/img/cover-merlioncloud.jpg")
+												img(src="/dist/img/cover-merlioncloud.jpg", alt="MerlionCloud")
 										.works__content
 											h3.works__name MerlionCloud &ndash;&nbsp;сайт провайдера облачных серверов и&nbsp;
 												span.last-word услуг
 													include ../img/arrow.svg
 											.works__description 
 												p Информационный сайт компании, занимающейся арендой серверов и&nbsp;предоставлением облачных услуг. Минималистичный, но&nbsp;приятный дизайн со&nbsp;множеством декоративных элементов на&nbsp;страницах. Есть страницы с&nbsp;тарифами предоставляемых услуг и&nbsp;необходимой информацией, а&nbsp;также формы обратной связи, новости и&nbsp;прочее. Формы имеют валидацию.
-												//- span.works__hint Посмотреть демо
 								article.works__item
 									a.works__link(href="https://weblazum.github.io/tegrus_library" target="_blank")
 										.works__cover 
 											picture
-												source(type="image/webp", srcset="/portfolio/img/cover-tegrus.webp")
-												source(type="image/jpg", srcset="/portfolio/img/cover-tegrus.jpg")
-												img(src="/portfolio/img/cover-tegrus.jpg", alt="Tegrus библиотека")
+												source(type="image/webp", srcset="/dist/img/cover-tegrus.webp")
+												source(type="image/jpg", srcset="/dist/img/cover-tegrus.jpg")
+												img(src="/dist/img/cover-tegrus.jpg", alt="Tegrus библиотека")
 										.works__content
 											h3.works__name Промостраница проекта Tegrus для&nbsp;библиотеки им.&nbsp;
 												span.last-word Маяковского 
 													include ../img/arrow.svg
 											.works__description 
-												p Небольшая красочная страница-отчет о реализации проекта дата-центров для библиотеки им. Маяковского в Санкт-Петербурге. Текст последовательно сопровождается анимацией, также есть форма обратной связи и нестандартный слайдер в конце страницы. Страница хорошо прочитывается на всех разрешениях экрана.
-												//- span.works__hint Посмотреть демо
+												p Небольшая красочная страница-отчет о&nbsp;реализации проекта дата-центров для&nbsp;библиотеки им.&nbsp;Маяковского в&nbsp;Санкт&#8209;Петербурге. Текст последовательно сопровождается анимацией, также есть форма обратной связи и&nbsp;нестандартный слайдер в&nbsp;конце страницы. Страница хорошо прочитывается на&nbsp;всех разрешениях экрана.
 								article.works__item
 									a.works__link(href="https://weblazum.github.io/hpe_msa_gen6" target="_blank")
 										.works__cover 
 											picture
-												source(type="image/webp", srcset="/portfolio/img/cover-hpe.webp")
-												source(type="image/jpg", srcset="/portfolio/img/cover-hpe.jpg")
-												img(src="/portfolio/img/cover-hpe.jpg", alt="HPE MSA GEN6")
+												source(type="image/webp", srcset="/dist/img/cover-hpe.webp")
+												source(type="image/jpg", srcset="/dist/img/cover-hpe.jpg")
+												img(src="/dist/img/cover-hpe.jpg", alt="HPE MSA GEN6")
 										.works__content
 											h3.works__name Продуктовый лендинг для&nbsp;систем хранения данных HPE MSA 
 												span.last-word GEN6
 													include ../img/arrow.svg
 											.works__description 
-												p Страница рассказывает о преимуществах продукта. Присутствует форма обратной связи, а также дополнительная форма для подбора решений в модальном окне. В процессе верстки были использованы современные технологии.
-												//- span.works__hint Посмотреть демо
+												p Страница рассказывает о&nbsp;преимуществах продукта. Присутствует форма обратной связи, а&nbsp;также дополнительная форма для&nbsp;подбора решений в&nbsp;модальном окне. В&nbsp;процессе верстки были использованы современные технологии.
 								article.works__item
 									a.works__link(href="https://weblazum.github.io/rentsoft" target="_blank")
 										.works__cover 
 											picture
-												source(type="image/webp", srcset="/portfolio/img/cover-rentsoft.webp")
-												source(type="image/jpg", srcset="/portfolio/img/cover-rentsoft.jpg")
-												img(src="/portfolio/img/cover-rentsoft.jpg", alt="Rentsoft")
+												source(type="image/webp", srcset="/dist/img/cover-rentsoft.webp")
+												source(type="image/jpg", srcset="/dist/img/cover-rentsoft.jpg")
+												img(src="/dist/img/cover-rentsoft.jpg", alt="Rentsoft")
 										.works__content
 											h3.works__name Сайт российской ИТ-компании 
 												span.last-word Rentsoft
 													include ../img/arrow.svg
 											.works__description 
-												p Небольшой сайт B2B-компании в бизнес-стиле. Сайт адаптирован под&nbsp;мобильные устройства. Также внимание было уделено скорости загрузки страниц и&nbsp;доступности, использовались современные форматы изображений и&nbsp;векторная графика.
-												//- span.works__hint Посмотреть демо
-						//- section.main__section.about#about
-						//- 	.about__content
-						//- 		h2.about__title.hidden-title.section-title Обо мне 
-						//- 		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci architecto qui neque tenetur nobis optio, et doloribus inventore consectetur vitae aliquam quidem laboriosam commodi quae quas placeat itaque quo.
-						//- 		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci architecto qui neque tenetur nobis optio, et doloribus inventore consectetur vitae aliquam quidem laboriosam commodi quae quas placeat itaque quo.
-						//- 		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci architecto qui neque tenetur nobis optio, et doloribus inventore consectetur vitae aliquam quidem laboriosam commodi quae quas placeat itaque quo.
+												p Небольшой сайт B2B-компании в&nbsp;бизнес-стиле. Сайт адаптирован под&nbsp;мобильные устройства. Также внимание было уделено скорости загрузки страниц и&nbsp;доступности, использовались современные форматы изображений и&nbsp;векторная графика.
+						section.main__section.about#about
+							.about__content
+								h2.about__title.hidden-title.section-title Обо мне 
+								p Я&nbsp;занимаюсь <span class="highlight-text">версткой сайтов</span>, а&nbsp;также администрированием и&nbsp;загрузкой контента. Работал с&nbsp;крупными <span class="highlight-text">международными брендами</span>. Имею опыт работы в&nbsp;<span class="highlight-text">веб&#8209;студиях<span>. 
+								p Изучаю <span class="highlight-text">новые технологии</span> и&nbsp;применяю нестандартные решения в&nbsp;реализации проектов. В&nbsp;меру кропотлив, уделяю достаточное внимание деталям. 
+								p Помимо своей основной специализации, <span class="highlight-text">расширяю знания</span> в&nbsp;смежных направлениях web'а,&nbsp;что позволяет мне более комплексно и&nbsp;всесторонне подходить к&nbsp;выполнению задач.
 			.bg-animated__box
 				.bg-animated__div.bg-animated__div--one
 				.bg-animated__div.bg-animated__div--two
@@ -364,5 +354,7 @@ html(lang='ru')
 				.bg-animated__div.bg-animated__div--ten
 				.bg-animated__div.bg-animated__div--eleven
 				.bg-animated__div.bg-animated__div--twelve
-		script(src='/portfolio/js/jquery-3.6.0.min.js')
-		script(src='/portfolio/js/main.js')
+				.bg-animated__div.bg-animated__div--thirteen
+				.bg-animated__div.bg-animated__div--fourteen
+		script(src='/dist/js/jquery-3.6.0.min.js')
+		script(src='/dist/js/main.js')
