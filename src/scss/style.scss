@@ -218,7 +218,7 @@
 	color: $color-grey;
 	padding: 0 0 10px;
 
-	&:focus-visible .contacts__icon svg {
+	&:focus-visible .contacts__img {
 		opacity: 1;
 	}
 	@include media(only-laptop) {
@@ -242,7 +242,7 @@
 	}
 }
 
-.contacts__icon svg {
+.contacts__img {
 	width: 28px;
 	height: 28px;
 	fill: $color-grey;
@@ -250,7 +250,8 @@
 	transition: 0.25s ease;
 	@include media(only-laptop) {
 		&:hover {
-			opacity: 1;
+			fill: $color-white;
+			opacity: 0.8;
 		}
 	}
 	@include media(phone-bg) {
@@ -273,7 +274,8 @@
 	font-size: 18px;
 	@include media(only-laptop) {
 		&:hover {
-			opacity: 1;
+			color: $color-white;
+			opacity: 0.8;
 			visibility: visible;
 			pointer-events: auto;
 			transform: translateY(0);
