@@ -37,32 +37,32 @@ button {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/portfolio/fonts/inter-regular.eot");
-  src: local("Inter"), url("/portfolio/fonts/inter-regular.eot?#iefix") format("embedded-opentype"), url("/portfolio/fonts/inter-regular.woff2") format("woff2"), url("/portfolio/fonts/inter-regular.woff") format("woff"), url("/portfolio/fonts/inter-regular.ttf") format("truetype"), url("/portfolio/fonts/inter-regular.svg") format("svg");
+  src: url("/dist/fonts/inter-regular.eot");
+  src: local("Inter"), url("/dist/fonts/inter-regular.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/inter-regular.woff2") format("woff2"), url("/dist/fonts/inter-regular.woff") format("woff"), url("/dist/fonts/inter-regular.ttf") format("truetype"), url("/dist/fonts/inter-regular.svg") format("svg");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("/portfolio/fonts/inter-medium.eot");
-  src: local("Inter"), url("/portfolio/fonts/inter-medium.eot?#iefix") format("embedded-opentype"), url("/portfolio/fonts/inter-medium.woff2") format("woff2"), url("/portfolio/fonts/inter-medium.woff") format("woff"), url("/portfolio/fonts/inter-medium.ttf") format("truetype"), url("/portfolio/fonts/inter-medium.svg") format("svg");
+  src: url("/dist/fonts/inter-medium.eot");
+  src: local("Inter"), url("/dist/fonts/inter-medium.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/inter-medium.woff2") format("woff2"), url("/dist/fonts/inter-medium.woff") format("woff"), url("/dist/fonts/inter-medium.ttf") format("truetype"), url("/dist/fonts/inter-medium.svg") format("svg");
 }
 @font-face {
   font-family: "Next Art";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("/portfolio/fonts/nextart-bold.eot");
-  src: local("Next Art"), url("/portfolio/fonts/nextart-bold.eot?#iefix") format("embedded-opentype"), url("/portfolio/fonts/nextart-bold.woff2") format("woff2"), url("/portfolio/fonts/nextart-bold.woff") format("woff"), url("/portfolio/fonts/nextart-bold.ttf") format("truetype"), url("/portfolio/fonts/nextart-bold.svg") format("svg");
+  src: url("/dist/fonts/nextart-bold.eot");
+  src: local("Next Art"), url("/dist/fonts/nextart-bold.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/nextart-bold.woff2") format("woff2"), url("/dist/fonts/nextart-bold.woff") format("woff"), url("/dist/fonts/nextart-bold.ttf") format("truetype"), url("/dist/fonts/nextart-bold.svg") format("svg");
 }
 @font-face {
   font-family: "Roboto Mono";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/portfolio/fonts/robotomono-regular.eot");
-  src: local("Roboto Mono"), url("/portfolio/fonts/robotomono-regular.eot?#iefix") format("embedded-opentype"), url("/portfolio/fonts/robotomono-regular.woff2") format("woff2"), url("/portfolio/fonts/robotomono-regular.woff") format("woff"), url("/portfolio/fonts/robotomono-regular.ttf") format("truetype"), url("/portfolio/fonts/robotomono-regular.svg") format("svg");
+  src: url("/dist/fonts/robotomono-regular.eot");
+  src: local("Roboto Mono"), url("/dist/fonts/robotomono-regular.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/robotomono-regular.woff2") format("woff2"), url("/dist/fonts/robotomono-regular.woff") format("woff"), url("/dist/fonts/robotomono-regular.ttf") format("truetype"), url("/dist/fonts/robotomono-regular.svg") format("svg");
 }
 html {
   scroll-behavior: smooth;
@@ -210,6 +210,26 @@ img {
   top: 0;
   max-width: 508px;
 }
+.header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  top: -236px;
+  left: -198px;
+  z-index: -1;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  -webkit-filter: blur(120px);
+          filter: blur(120px);
+  opacity: 0.05;
+}
+@media (max-width: 860px) {
+  .header:before {
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   .header {
     position: static;
@@ -223,21 +243,6 @@ img {
 .header__me {
   margin: 0 0 64px;
   position: relative;
-}
-.header__me:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  top: -236px;
-  left: -198px;
-  z-index: -1;
-  background-color: #e2e8f0;
-  border-radius: 50%;
-  -webkit-filter: blur(120px);
-          filter: blur(120px);
-  opacity: 0.04;
 }
 @media (max-width: 860px) {
   .header__me {
@@ -718,7 +723,7 @@ li.responsibility__item:before {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
-  gap: 38px 18px;
+  gap: 36px 18px;
 }
 
 .skills__section:nth-child(3) .skills__list {

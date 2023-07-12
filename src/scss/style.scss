@@ -36,16 +36,6 @@
 	position: sticky;
 	top: 0;
 	max-width: 508px;
-	@include media(tablet) {
-		position: static;
-		max-height: fit-content;
-		padding: 68px 0 48px;
-	}
-}
-
-.header__me {
-	margin: 0 0 64px;
-	position: relative;
 	&:before {
 		content: "";
 		display: block;
@@ -58,8 +48,21 @@
 		background-color: $color-white;
 		border-radius: 50%;
 		filter: blur(120px);
-		opacity: 0.04;
+		opacity: 0.05;
+		@include media(phone-bg) {
+			display: none;
+		}
 	}
+	@include media(tablet) {
+		position: static;
+		max-height: fit-content;
+		padding: 68px 0 48px;
+	}
+}
+
+.header__me {
+	margin: 0 0 64px;
+	position: relative;
 	@include media(phone-bg) {
 		margin: 0;
 	}
@@ -438,7 +441,7 @@ li.responsibility__item {
 .skills__list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
-	gap: 38px 18px;
+	gap: 36px 18px;
 }
 .skills__section:nth-child(3) {
 	.skills__list {
