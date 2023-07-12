@@ -438,7 +438,7 @@ img {
   color: #b3b3b3;
   padding: 0 0 10px;
 }
-.contacts__link:focus-visible .contacts__icon svg {
+.contacts__link:focus-visible .contacts__img {
   opacity: 1;
 }
 @media (min-width: 860px) {
@@ -464,7 +464,7 @@ img {
   }
 }
 
-.contacts__icon svg {
+.contacts__img {
   width: 28px;
   height: 28px;
   fill: #b3b3b3;
@@ -473,12 +473,13 @@ img {
   transition: 0.25s ease;
 }
 @media (min-width: 860px) {
-  .contacts__icon svg:hover {
-    opacity: 1;
+  .contacts__img:hover {
+    fill: #e2e8f0;
+    opacity: 0.8;
   }
 }
 @media (max-width: 860px) {
-  .contacts__icon svg {
+  .contacts__img {
     width: 36px;
     height: 36px;
   }
@@ -503,7 +504,8 @@ img {
 }
 @media (min-width: 860px) {
   .contacts__hint:hover {
-    opacity: 1;
+    color: #e2e8f0;
+    opacity: 0.8;
     visibility: visible;
     pointer-events: auto;
     -webkit-transform: translateY(0);
