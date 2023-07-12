@@ -970,6 +970,7 @@ li.responsibility__item:before {
   height: 60px;
   background: transparent;
   border: 6px solid rgba(95, 95, 95, 0.4);
+  z-index: -1;
 }
 
 .bg-animated__div--one {
