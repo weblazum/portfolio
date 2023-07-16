@@ -1,3 +1,8 @@
+window.onload = function () {
+	let preloader = document.getElementById('preloader');
+	preloader.classList.add('preloader--hidden');
+};
+
 const asideContent = $('.nav__list');
 const asideContentItem = $('.nav__link');
 
