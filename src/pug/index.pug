@@ -21,11 +21,8 @@ html(lang='ru')
 	body
 		.bg-animated
 			.preloader#preloader
-				.preloader__box
-					.preloader__div.preloader__div--one
-					.preloader__div.preloader__div--two
-					.preloader__div.preloader__div--three
-					.preloader__div.preloader__div--four
+				svg(id="indicator" viewBox="0 0 100 100")
+					circle(id="circle" cx="50" cy="50" r="45")
 			.wrapper
 				header.header
 					aside.header__container
